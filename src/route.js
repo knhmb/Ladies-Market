@@ -4,11 +4,13 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import RegisterationForm from "./pages/RegisterationForm";
 import RegisterationFormTC from "./pages/RegisterationFormT&C";
+import Home from "./pages/Home";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/login" },
+    { path: "/", redirect: "/home" },
+    { path: "/home", component: Home },
     { path: "/login", component: Login },
     { path: "/register", component: Register },
     { path: "/registeration-form", component: RegisterationForm },
