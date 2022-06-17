@@ -7,6 +7,9 @@ import RegisterationFormTC from "./pages/RegisterationFormT&C";
 import Home from "./pages/Home";
 import Eshop from "./pages/Eshop";
 import WishProductService from "./pages/WishProductService";
+import WishStore from "./pages/WishStore";
+import WishBeautyChannel from "./pages/WishBeautyChannel";
+import WishLiveRecord from "./pages/WishLiveRecord";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,6 +30,18 @@ const router = createRouter({
     {
       path: "/wish-product-and-service",
       component: WishProductService,
+    },
+    {
+      path: "/wish-store",
+      component: WishStore,
+    },
+    {
+      path: "/wish-beauty-channel",
+      component: WishBeautyChannel,
+    },
+    {
+      path: "/wish-live-record",
+      component: WishLiveRecord,
     },
   ],
 });

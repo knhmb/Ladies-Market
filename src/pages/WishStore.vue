@@ -1,0 +1,35 @@
+<template>
+  <section class="wish-store">
+    <base-container>
+      <h5>願望</h5>
+      <Tab />
+    </base-container>
+  </section>
+</template>
+
+<script>
+import Tab from "../components/wish-product-service/Tab";
+
+export default {
+  components: {
+    Tab,
+  },
+};
+</script>
+
+<style scoped>
+.wish-store {
+  padding: 2rem 0;
+  background: #fef2e2;
+}
+
+.wish-store h5 {
+  font-family: "PingFang HK";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+</style>

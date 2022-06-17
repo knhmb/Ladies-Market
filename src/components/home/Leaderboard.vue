@@ -132,7 +132,7 @@ export default {
 
 @media screen and (max-width: 991px) {
   .leaderboard .container {
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
 }
 </style>

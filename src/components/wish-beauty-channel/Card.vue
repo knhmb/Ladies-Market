@@ -1,5 +1,5 @@
 <template>
-  <div class="wish-product-service-card">
+  <div class="wish-beauty-channel-card">
     <el-row :gutter="20">
       <el-col v-for="item in 32" :key="item" :sm="12" :md="8" :lg="6">
         <div class="card">
@@ -9,8 +9,13 @@
             alt=""
           />
           <img
+            class="video-img"
+            src="../../assets/home/play-video@2x.png"
+            alt=""
+          />
+          <img
             class="product-img"
-            src="../../assets/home/sample-product@2x.png"
+            src="../../assets/home/sample-video@2x.png"
             alt=""
           />
           <div class="card-body">
@@ -20,8 +25,7 @@
             <p class="description">
               店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱
             </p>
-            <p class="discount">$2,800.00</p>
-            <p class="price">$2,230.00</p>
+            <p class="date">2022-11-11</p>
           </div>
         </div>
       </el-col>
@@ -30,11 +34,11 @@
 </template>
 
 <style scoped>
-.wish-product-service-card {
+.wish-beauty-channel-card {
   margin-top: 1.5rem;
 }
 
-.wish-product-service-card .card {
+.wish-beauty-channel-card .card {
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -42,13 +46,13 @@
   position: relative;
 }
 
-.wish-product-service-card .card img.product-img {
+.wish-beauty-channel-card .card img.product-img {
   width: 100%;
   height: 100%;
   border-radius: 8px 8px 0 0;
 }
 
-.wish-product-service-card .card img.wish-img {
+.wish-beauty-channel-card .card img.wish-img {
   position: absolute;
   right: 0.2rem;
   border-radius: 0;
@@ -56,11 +60,19 @@
   top: 0;
 }
 
-.wish-product-service-card .card .card-body {
+.wish-beauty-channel-card .card img.video-img {
+  border: none;
+  width: 2rem;
+  position: absolute;
+  left: 0.1rem;
+  top: 0.1rem;
+}
+
+.wish-beauty-channel-card .card .card-body {
   padding: 0.5rem;
 }
 
-.wish-product-service-card .card .card-body p.title {
+.wish-beauty-channel-card .card .card-body p.title {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -70,7 +82,7 @@
   color: #333333;
   margin-bottom: 0.5rem;
 }
-.wish-product-service-card .card .card-body p.description {
+.wish-beauty-channel-card .card .card-body p.description {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -80,25 +92,14 @@
   color: #808080;
 }
 
-.wish-product-service-card .card .card-body p.discount {
+.wish-beauty-channel-card .card .card-body p.date {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 130%;
   letter-spacing: -0.02em;
-  text-decoration-line: line-through;
-  color: #999999;
+  color: #808080;
   margin-top: 1rem;
-}
-
-.wish-product-service-card .card .card-body p.price {
-  font-family: "PingFang HK";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 135%;
-  letter-spacing: -0.02em;
-  color: #e16956;
 }
 </style>

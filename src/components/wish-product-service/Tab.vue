@@ -1,43 +1,56 @@
 <template>
   <div class="tab">
     <div
-      @click="setTab('first')"
-      :class="{ 'is-active': currentOption === 'first' }"
+      @click="navigate('/wish-product-and-service')"
+      :class="{ 'is-active': $route.path === '/wish-product-and-service' }"
       class="single-tab"
     >
       <p>產品/服務</p>
     </div>
     <div
-      @click="setTab('second')"
-      :class="{ 'is-active': currentOption === 'second' }"
+      @click="navigate('/wish-store')"
+      :class="{ 'is-active': $route.path === '/wish-store' }"
       class="single-tab"
     >
       <p>店舖</p>
     </div>
     <div
-      @click="setTab('third')"
-      :class="{ 'is-active': currentOption === 'third' }"
+      @click="navigate('/wish-beauty-channel')"
+      :class="{ 'is-active': $route.path === '/wish-beauty-channel' }"
       class="single-tab"
     >
       <p>美容頻道</p>
     </div>
     <div
-      @click="setTab('fourth')"
-      :class="{ 'is-active': currentOption === 'fourth' }"
+      @click="navigate('/wish-live-record')"
+      :class="{ 'is-active': $route.path === '/wish-live-record' }"
       class="single-tab"
     >
       <p>過往直播</p>
     </div>
   </div>
-  <Card v-if="currentOption === 'first'" />
+  <Card v-if="$route.path === '/wish-product-and-service'" />
+  <wish-store-card v-if="$route.path === '/wish-store'"></wish-store-card>
+  <wish-beauty-channel-card
+    v-if="$route.path === '/wish-beauty-channel'"
+  ></wish-beauty-channel-card>
+  <wish-live-record-card
+    v-if="$route.path === '/wish-live-record'"
+  ></wish-live-record-card>
 </template>
 
 <script>
 import Card from "./Card";
+import WishStoreCard from "../wish-store/Card";
+import WishBeautyChannelCard from "../wish-beauty-channel/Card";
+import WishLiveRecordCard from "../wish-live-record/Card";
 
 export default {
   components: {
     Card,
+    WishStoreCard,
+    WishBeautyChannelCard,
+    WishLiveRecordCard,
   },
   data() {
     return {
@@ -47,6 +60,9 @@ export default {
   methods: {
     setTab(option) {
       this.currentOption = option;
+    },
+    navigate(path) {
+      this.$router.push(path);
     },
   },
 };
@@ -93,5 +109,11 @@ export default {
   text-align: center;
   letter-spacing: -0.02em;
   color: #999999;
+}
+
+@media screen and (max-width: 991px) {
+  .tab .single-tab {
+    padding: 0.5rem 0.3rem;
+  }
 }
 </style>

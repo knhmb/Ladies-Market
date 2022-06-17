@@ -214,7 +214,7 @@ export default {
 
 @media screen and (max-width: 991px) {
   .recommends .container {
-    padding: 0rem 3rem;
+    padding: 0rem 1rem;
   }
 }
 </style>
