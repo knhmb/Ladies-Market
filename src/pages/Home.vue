@@ -2,10 +2,10 @@
   <section class="home">
     <base-container>
       <el-row :gutter="20">
-        <el-col :span="17">
+        <el-col :sm="24" :md="17">
           <img class="banner" src="../assets/home/banner1@2x.png" alt="" />
         </el-col>
-        <el-col :span="7">
+        <el-col :sm="24" :md="7">
           <div class="card">
             <img src="../assets/home/default-avatar-unknown@2x.png" alt="" />
             <p>還未加入Ladies Market嗎？</p>
@@ -135,5 +135,11 @@ export default {
   letter-spacing: -0.02em;
   color: #cccccc;
   padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .home img.banner {
+    margin-bottom: 1rem;
+  }
 }
 </style>

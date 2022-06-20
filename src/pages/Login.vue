@@ -70,7 +70,10 @@ export default {
 
 <style scoped>
 .login {
-  background-color: #fcf0ef;
+  background-image: url("../assets/login/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   padding: 2rem 0;
 }
 

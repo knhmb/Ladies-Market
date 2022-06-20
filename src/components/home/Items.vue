@@ -1,7 +1,7 @@
 <template>
   <div class="items">
     <el-row justify="space-between">
-      <el-col v-for="item in items" :key="item" :span="3">
+      <el-col v-for="item in items" :key="item" :xs="6" :sm="6" :md="3">
         <div class="item-content">
           <img :src="item.img" />
           <p>{{ item.name }}</p>
@@ -80,5 +80,11 @@ export default {
   letter-spacing: -0.02em;
   color: #000000;
   margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .items .item-content {
+    margin-bottom: 1rem;
+  }
 }
 </style>

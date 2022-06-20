@@ -62,8 +62,10 @@ export default {};
 
 <style scoped>
 .registeration-form-tc {
-  background-color: #fcf0ef;
   padding: 2rem 0;
+  background-image: url("../assets/login/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .registeration-form-tc .el-row .el-col {

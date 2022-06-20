@@ -5,7 +5,9 @@
         <el-col :span="24">
           <div class="register-card">
             <h5>註冊</h5>
-            <el-button>使用電郵註冊帳號</el-button>
+            <el-button @click="$router.push('/registeration-form')"
+              >使用電郵註冊帳號</el-button
+            >
             <el-divider content-position="center">或</el-divider>
             <el-button class="google"
               ><img
@@ -47,8 +49,11 @@ export default {
 
 <style scoped>
 .register {
-  background-color: #fcf0ef;
   padding: 2rem 0;
+  background-image: url("../assets/login/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .register .register-card {

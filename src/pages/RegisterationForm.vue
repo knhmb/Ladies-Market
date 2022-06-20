@@ -28,7 +28,9 @@ export default {
 
 <style scoped>
 .registeration-form {
-  background-color: #fcf0ef;
+  background-image: url("../assets/login/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2rem 0;
 }
 

@@ -10,6 +10,7 @@ import WishProductService from "./pages/WishProductService";
 import WishStore from "./pages/WishStore";
 import WishBeautyChannel from "./pages/WishBeautyChannel";
 import WishLiveRecord from "./pages/WishLiveRecord";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +43,10 @@ const router = createRouter({
     {
       path: "/wish-live-record",
       component: WishLiveRecord,
+    },
+    {
+      path: "/forgot-password",
+      component: ForgotPassword,
     },
   ],
 });
