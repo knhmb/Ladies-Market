@@ -11,6 +11,7 @@ import WishStore from "./pages/WishStore";
 import WishBeautyChannel from "./pages/WishBeautyChannel";
 import WishLiveRecord from "./pages/WishLiveRecord";
 import ForgotPassword from "./pages/ForgotPassword";
+import BeautyChannel from "./pages/BeautyChannel";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -47,6 +48,10 @@ const router = createRouter({
     {
       path: "/forgot-password",
       component: ForgotPassword,
+    },
+    {
+      path: "/beauty-channel",
+      component: BeautyChannel,
     },
   ],
 });
