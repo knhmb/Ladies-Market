@@ -2,9 +2,20 @@
   <section class="beauty-channel">
     <base-container>
       <h5>直播</h5>
+      <left-section></left-section>
     </base-container>
   </section>
 </template>
+
+<script>
+import LeftSection from "../components/beauty-channel/LeftSection.vue";
+
+export default {
+  components: {
+    LeftSection,
+  },
+};
+</script>
 
 <style scoped>
 .beauty-channel {
