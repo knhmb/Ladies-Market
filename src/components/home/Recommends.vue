@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 .recommends {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .recommends .container {
@@ -215,6 +215,14 @@ export default {
 @media screen and (max-width: 991px) {
   .recommends .container {
     padding: 0rem 1rem;
+  }
+
+  .recommends .recommends-main .el-carousel :deep(.el-carousel__arrow--left) {
+    left: 0;
+  }
+
+  .recommends .recommends-main .el-carousel :deep(.el-carousel__arrow--right) {
+    right: 0;
   }
 }
 </style>

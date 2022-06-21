@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
 .leaderboard {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .leaderboard .container {

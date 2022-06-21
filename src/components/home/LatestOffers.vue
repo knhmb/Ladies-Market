@@ -112,7 +112,7 @@ export default {
 
 <style scoped>
 .latest-offers {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .latest-offers .container {
@@ -230,6 +230,20 @@ export default {
 @media screen and (max-width: 991px) {
   .latest-offers .container {
     padding: 0rem 1rem;
+  }
+
+  .latest-offers
+    .latest-offers-main
+    .el-carousel
+    :deep(.el-carousel__arrow--left) {
+    left: 0;
+  }
+
+  .latest-offers
+    .latest-offers-main
+    .el-carousel
+    :deep(.el-carousel__arrow--right) {
+    right: 0;
   }
 }
 </style>

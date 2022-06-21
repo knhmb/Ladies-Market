@@ -1,7 +1,7 @@
 <template>
   <div class="beauty-channel-left-section">
-    <el-row>
-      <el-col :span="18">
+    <el-row :gutter="15">
+      <el-col :sm="24" :md="16">
         <div class="img-content">
           <img src="../../assets/wish/sample-live@2x.png" alt="" />
           <div class="box">
@@ -31,9 +31,22 @@
           </div>
         </div>
       </el-col>
+      <el-col :sm="24" :md="8">
+        <right-section></right-section>
+      </el-col>
     </el-row>
   </div>
 </template>
+
+<script>
+import RightSection from "./RightSection.vue";
+
+export default {
+  components: {
+    RightSection,
+  },
+};
+</script>
 
 <style scoped>
 .beauty-channel-left-section {
@@ -100,6 +113,7 @@
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #333333;
+  max-width: 90%;
 }
 
 .beauty-channel-left-section .share .share-one .content p:nth-of-type(2) {

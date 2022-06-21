@@ -6,7 +6,7 @@
 
 <style scoped>
 .container {
-  padding: 1rem 14rem;
+  padding: 1rem 13rem;
 }
 
 @media screen and (max-width: 991px) {

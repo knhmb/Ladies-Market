@@ -1,10 +1,10 @@
 <template>
-  <div class="beauty-channel">
+  <div class="live-video-carousel">
     <base-container>
       <div class="tab-content">
-        <img class="tab-img" src="../../assets/home/tab2-left@2x.png" alt="" />
-        <p class="tab">美容頻道</p>
-        <img class="tab-img" src="../../assets/home/tab2-right@2x.png" alt="" />
+        <img class="tab-img" src="../../assets/home/tab3-left@2x.png" alt="" />
+        <p class="tab">過往直播</p>
+        <img class="tab-img" src="../../assets/home/tab3-right@2x.png" alt="" />
       </div>
     </base-container>
 
@@ -27,7 +27,12 @@
                     src="../../assets/home/play-video@2x.png"
                     alt=""
                   />
-                  <img src="../../assets/home/sample-video@2x.png" alt="" />
+                  <img
+                    class="wish-off-icon"
+                    src="../../assets/beauty-channel/wish-off-desktop@2x.png"
+                    alt=""
+                  />
+                  <img src="../../assets/wish/sample-live@2x.png" alt="" />
                   <div class="card-body">
                     <p class="title">
                       推廣產品名稱推廣產品名稱推廣產品名稱產品名稱產品名稱產品名稱
@@ -42,27 +47,6 @@
             </el-row>
           </el-carousel-item>
         </el-carousel>
-        <!-- <el-row :gutter="20">
-          <el-col v-for="item in items" :key="item" :span="6">
-            <div class="card">
-              <img src="../../assets/home/sample-product@2x.png" alt="" />
-              <div class="card-body">
-                <p class="title">
-                  推廣產品名稱推廣產品名稱推廣產品名稱產品名稱產品名稱產品名稱
-                </p>
-                <p class="description">
-                  店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱
-                </p>
-                <p class="discount">
-                  {{ item.discount ? item.discount : "" }}
-                </p>
-                <p class="price">
-                  {{ item.price ? item.price : "" }}
-                </p>
-              </div>
-            </div>
-          </el-col>
-        </el-row> -->
       </base-container>
     </div>
   </div>
@@ -77,16 +61,16 @@ export default {
 </script>
 
 <style scoped>
-.beauty-channel {
+.live-video-carousel {
   margin-top: 2rem;
 }
 
-.beauty-channel .container {
+.live-video-carousel .container {
   padding: 0 14rem;
 }
 
-.beauty-channel p.tab {
-  background: #fef2e2;
+.live-video-carousel p.tab {
+  background: #f7f6f2;
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 500;
@@ -97,25 +81,20 @@ export default {
   padding: 0.2rem;
 }
 
-.beauty-channel .tab-content {
+.live-video-carousel .tab-content {
   display: flex;
 }
 
-.beauty-channel .tab-content img.tab-img {
+.live-video-carousel .tab-content img.tab-img {
   width: 1.5rem;
-  /* margin-left: 0.2rem; */
 }
 
-.beauty-channel .beauty-channel-main {
-  background: #fef2e2;
-  padding: 1.5rem 0;
+.live-video-carousel .beauty-channel-main {
+  background: #f7f6f2;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
-.beauty-channel .beauty-channel-main .el-col.card-col {
-  /* position: relative; */
-}
-
-.beauty-channel .beauty-channel-main .card {
+.live-video-carousel .beauty-channel-main .card {
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -123,12 +102,12 @@ export default {
   position: relative;
 }
 
-.beauty-channel .beauty-channel-main .card img {
+.live-video-carousel .beauty-channel-main .card img {
   width: 100%;
   border-radius: 8px 8px 0 0;
 }
 
-.beauty-channel .beauty-channel-main .card img.video-img {
+.live-video-carousel .beauty-channel-main .card img.video-img {
   border: none;
   width: 2rem;
   position: absolute;
@@ -136,11 +115,19 @@ export default {
   top: 0.1rem;
 }
 
-.beauty-channel .beauty-channel-main .card .card-body {
+.live-video-carousel .beauty-channel-main .card img.wish-off-icon {
+  border: none;
+  width: 2.3rem;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.1rem;
+}
+
+.live-video-carousel .beauty-channel-main .card .card-body {
   padding: 0.5rem;
 }
 
-.beauty-channel .beauty-channel-main .card .card-body p.title {
+.live-video-carousel .beauty-channel-main .card .card-body p.title {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -150,7 +137,7 @@ export default {
   color: #333333;
   margin-bottom: 0.5rem;
 }
-.beauty-channel .beauty-channel-main .card .card-body p.description {
+.live-video-carousel .beauty-channel-main .card .card-body p.description {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -160,7 +147,7 @@ export default {
   color: #808080;
 }
 
-.beauty-channel .beauty-channel-main .card .card-body p.date {
+.live-video-carousel .beauty-channel-main .card .card-body p.date {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -171,24 +158,27 @@ export default {
   margin-top: 1rem;
 }
 
-.beauty-channel .beauty-channel-main .el-carousel {
+.live-video-carousel .beauty-channel-main .el-carousel {
   overflow: visible;
 }
 
-.beauty-channel .beauty-channel-main .el-carousel :deep(.el-carousel__arrow) {
+.live-video-carousel
+  .beauty-channel-main
+  .el-carousel
+  :deep(.el-carousel__arrow) {
   background-color: #fff;
   color: #666;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.beauty-channel
+.live-video-carousel
   .beauty-channel-main
   .el-carousel
   :deep(.el-carousel__arrow--left) {
   left: -3rem;
 }
 
-.beauty-channel
+.live-video-carousel
   .beauty-channel-main
   .el-carousel
   :deep(.el-carousel__arrow--right) {
@@ -196,18 +186,18 @@ export default {
 }
 
 @media screen and (max-width: 991px) {
-  .beauty-channel .container {
+  .live-video-carousel .container {
     padding: 0rem 1rem;
   }
 
-  .beauty-channel
+  .live-video-carousel
     .beauty-channel-main
     .el-carousel
     :deep(.el-carousel__arrow--left) {
     left: 0;
   }
 
-  .beauty-channel
+  .live-video-carousel
     .beauty-channel-main
     .el-carousel
     :deep(.el-carousel__arrow--right) {

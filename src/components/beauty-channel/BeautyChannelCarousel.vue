@@ -1,10 +1,10 @@
 <template>
-  <div class="beauty-channel">
+  <div class="beauty-channel-carousel">
     <base-container>
       <div class="tab-content">
-        <img class="tab-img" src="../../assets/home/tab2-left@2x.png" alt="" />
+        <img class="tab-img" src="../../assets/home/tab1-left@2x.png" alt="" />
         <p class="tab">美容頻道</p>
-        <img class="tab-img" src="../../assets/home/tab2-right@2x.png" alt="" />
+        <img class="tab-img" src="../../assets/home/tab1-right@2x.png" alt="" />
       </div>
     </base-container>
 
@@ -42,27 +42,6 @@
             </el-row>
           </el-carousel-item>
         </el-carousel>
-        <!-- <el-row :gutter="20">
-          <el-col v-for="item in items" :key="item" :span="6">
-            <div class="card">
-              <img src="../../assets/home/sample-product@2x.png" alt="" />
-              <div class="card-body">
-                <p class="title">
-                  推廣產品名稱推廣產品名稱推廣產品名稱產品名稱產品名稱產品名稱
-                </p>
-                <p class="description">
-                  店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱店舖名稱
-                </p>
-                <p class="discount">
-                  {{ item.discount ? item.discount : "" }}
-                </p>
-                <p class="price">
-                  {{ item.price ? item.price : "" }}
-                </p>
-              </div>
-            </div>
-          </el-col>
-        </el-row> -->
       </base-container>
     </div>
   </div>
@@ -77,16 +56,16 @@ export default {
 </script>
 
 <style scoped>
-.beauty-channel {
+.beauty-channel-carousel {
   margin-top: 2rem;
 }
 
-.beauty-channel .container {
+.beauty-channel-carousel .container {
   padding: 0 14rem;
 }
 
-.beauty-channel p.tab {
-  background: #fef2e2;
+.beauty-channel-carousel p.tab {
+  background: #e2f2ef;
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 500;
@@ -97,25 +76,20 @@ export default {
   padding: 0.2rem;
 }
 
-.beauty-channel .tab-content {
+.beauty-channel-carousel .tab-content {
   display: flex;
 }
 
-.beauty-channel .tab-content img.tab-img {
+.beauty-channel-carousel .tab-content img.tab-img {
   width: 1.5rem;
-  /* margin-left: 0.2rem; */
 }
 
-.beauty-channel .beauty-channel-main {
-  background: #fef2e2;
-  padding: 1.5rem 0;
+.beauty-channel-carousel .beauty-channel-main {
+  background: #e2f2ef;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
-.beauty-channel .beauty-channel-main .el-col.card-col {
-  /* position: relative; */
-}
-
-.beauty-channel .beauty-channel-main .card {
+.beauty-channel-carousel .beauty-channel-main .card {
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -123,12 +97,12 @@ export default {
   position: relative;
 }
 
-.beauty-channel .beauty-channel-main .card img {
+.beauty-channel-carousel .beauty-channel-main .card img {
   width: 100%;
   border-radius: 8px 8px 0 0;
 }
 
-.beauty-channel .beauty-channel-main .card img.video-img {
+.beauty-channel-carousel .beauty-channel-main .card img.video-img {
   border: none;
   width: 2rem;
   position: absolute;
@@ -136,11 +110,11 @@ export default {
   top: 0.1rem;
 }
 
-.beauty-channel .beauty-channel-main .card .card-body {
+.beauty-channel-carousel .beauty-channel-main .card .card-body {
   padding: 0.5rem;
 }
 
-.beauty-channel .beauty-channel-main .card .card-body p.title {
+.beauty-channel-carousel .beauty-channel-main .card .card-body p.title {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -150,7 +124,7 @@ export default {
   color: #333333;
   margin-bottom: 0.5rem;
 }
-.beauty-channel .beauty-channel-main .card .card-body p.description {
+.beauty-channel-carousel .beauty-channel-main .card .card-body p.description {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -160,7 +134,7 @@ export default {
   color: #808080;
 }
 
-.beauty-channel .beauty-channel-main .card .card-body p.date {
+.beauty-channel-carousel .beauty-channel-main .card .card-body p.date {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -171,24 +145,27 @@ export default {
   margin-top: 1rem;
 }
 
-.beauty-channel .beauty-channel-main .el-carousel {
+.beauty-channel-carousel .beauty-channel-main .el-carousel {
   overflow: visible;
 }
 
-.beauty-channel .beauty-channel-main .el-carousel :deep(.el-carousel__arrow) {
+.beauty-channel-carousel
+  .beauty-channel-main
+  .el-carousel
+  :deep(.el-carousel__arrow) {
   background-color: #fff;
   color: #666;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.beauty-channel
+.beauty-channel-carousel
   .beauty-channel-main
   .el-carousel
   :deep(.el-carousel__arrow--left) {
   left: -3rem;
 }
 
-.beauty-channel
+.beauty-channel-carousel
   .beauty-channel-main
   .el-carousel
   :deep(.el-carousel__arrow--right) {
@@ -196,18 +173,18 @@ export default {
 }
 
 @media screen and (max-width: 991px) {
-  .beauty-channel .container {
+  .beauty-channel-carousel .container {
     padding: 0rem 1rem;
   }
 
-  .beauty-channel
+  .beauty-channel-carousel
     .beauty-channel-main
     .el-carousel
     :deep(.el-carousel__arrow--left) {
     left: 0;
   }
 
-  .beauty-channel
+  .beauty-channel-carousel
     .beauty-channel-main
     .el-carousel
     :deep(.el-carousel__arrow--right) {
