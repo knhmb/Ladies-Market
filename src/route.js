@@ -12,6 +12,7 @@ import WishBeautyChannel from "./pages/WishBeautyChannel";
 import WishLiveRecord from "./pages/WishLiveRecord";
 import ForgotPassword from "./pages/ForgotPassword";
 import BeautyChannel from "./pages/BeautyChannel";
+import Notifications from "./pages/Notifications";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -52,6 +53,10 @@ const router = createRouter({
     {
       path: "/beauty-channel",
       component: BeautyChannel,
+    },
+    {
+      path: "/notifications",
+      component: Notifications,
     },
   ],
 });
