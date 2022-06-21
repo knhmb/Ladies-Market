@@ -11,15 +11,23 @@
       <p>美容頻道(20)</p>
     </div>
     <div
-      @click="setOption('second')"
-      :class="{ 'is-active': currentOption === 'second' }"
+      @click="setOption('/beauty-channel-search-result-live-record')"
+      :class="{
+        'is-active':
+          $route.path === '/beauty-channel-search-result-live-record',
+      }"
       class="content"
     >
       <p>過往直播(40)</p>
     </div>
   </div>
   <div class="filter">
-    <p>共 <span>20</span> 段影片</p>
+    <p v-if="$route.path === '/beauty-channel-search-result-video'">
+      共 <span>20</span> 段影片
+    </p>
+    <p v-if="$route.path === '/beauty-channel-search-result-live-record'">
+      共 <span>40</span> 段影片
+    </p>
     <div class="filter-right">
       <img src="../../assets/beauty-channel/vector.png" alt="" />
       <p>篩選</p>
@@ -30,24 +38,39 @@
   <first-section
     v-if="$route.path === '/beauty-channel-search-result-video'"
   ></first-section>
+  <first-section-live-record
+    v-if="$route.path === '/beauty-channel-search-result-live-record'"
+  ></first-section-live-record>
+
   <second-section></second-section>
+
   <first-section
     v-if="$route.path === '/beauty-channel-search-result-video'"
   ></first-section>
+  <first-section-live-record
+    v-if="$route.path === '/beauty-channel-search-result-live-record'"
+  ></first-section-live-record>
+
   <second-section></second-section>
+
   <first-section
     v-if="$route.path === '/beauty-channel-search-result-video'"
   ></first-section>
+  <first-section-live-record
+    v-if="$route.path === '/beauty-channel-search-result-live-record'"
+  ></first-section-live-record>
 </template>
 
 <script>
 import FirstSection from "./FirstSection.vue";
+import FirstSectionLiveRecord from "../beauty-channel-search-result-live-record/FirstSection";
 import SecondSection from "../e-shop/SecondSection.vue";
 
 export default {
   components: {
     FirstSection,
     SecondSection,
+    FirstSectionLiveRecord,
   },
   data() {
     return {

@@ -14,6 +14,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import BeautyChannel from "./pages/BeautyChannel";
 import Notifications from "./pages/Notifications";
 import BeautyChannelSearchResultVideo from "./pages/BeautyChannelSearchResultVideo";
+import BeautyChannelSearchResultLiveRecord from "./pages/BeautyChannelSearchResultLiveRecord";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -62,6 +63,10 @@ const router = createRouter({
     {
       path: "/beauty-channel-search-result-video",
       component: BeautyChannelSearchResultVideo,
+    },
+    {
+      path: "/beauty-channel-search-result-live-record",
+      component: BeautyChannelSearchResultLiveRecord,
     },
   ],
 });
