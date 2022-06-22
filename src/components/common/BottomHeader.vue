@@ -69,18 +69,30 @@
           </div>
         </el-col>
         <el-col :span="3">
-          <el-button class="btn-header">進階搜尋</el-button>
+          <el-button @click="advancedSearchDialog = true" class="btn-header"
+            >進階搜尋</el-button
+          >
         </el-col>
       </el-row>
     </base-container>
   </section>
+  <advanced-search-dialog
+    :advanced-search-dialog="advancedSearchDialog"
+    @closedDialog="advancedSearchDialog = $event"
+  ></advanced-search-dialog>
 </template>
 
 <script>
+import AdvancedSearchDialog from "../search-product/AdvancedSearchDialog.vue";
+
 export default {
+  components: {
+    AdvancedSearchDialog,
+  },
   data() {
     return {
       currentOption: "first",
+      advancedSearchDialog: false,
       input: "",
       options: [
         {

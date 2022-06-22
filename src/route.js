@@ -16,6 +16,9 @@ import Notifications from "./pages/Notifications";
 import BeautyChannelSearchResultVideo from "./pages/BeautyChannelSearchResultVideo";
 import BeautyChannelSearchResultLiveRecord from "./pages/BeautyChannelSearchResultLiveRecord";
 import Product from "./pages/Product";
+import SearchProduct from "./pages/SearchProduct";
+import AdvancedSearchProductResult from "./pages/AdvancedSearchProductResult";
+import SearchShop from "./pages/SearchShop";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -72,6 +75,18 @@ const router = createRouter({
     {
       path: "/product",
       component: Product,
+    },
+    {
+      path: "/search-product",
+      component: SearchProduct,
+    },
+    {
+      path: "/advanced-search-product-result",
+      component: AdvancedSearchProductResult,
+    },
+    {
+      path: "/search-shop",
+      component: SearchShop,
     },
   ],
 });
