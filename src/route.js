@@ -18,6 +18,7 @@ import BeautyChannelSearchResultLiveRecord from "./pages/BeautyChannelSearchResu
 import Product from "./pages/Product";
 import SearchProduct from "./pages/SearchProduct";
 import AdvancedSearchProductResult from "./pages/AdvancedSearchProductResult";
+import AdvancedSearchShopResult from "./pages/AdvancedSearchShopResult";
 import SearchShop from "./pages/SearchShop";
 
 const router = createRouter({
@@ -83,6 +84,10 @@ const router = createRouter({
     {
       path: "/advanced-search-product-result",
       component: AdvancedSearchProductResult,
+    },
+    {
+      path: "/advanced-search-shop-result",
+      component: AdvancedSearchShopResult,
     },
     {
       path: "/search-shop",

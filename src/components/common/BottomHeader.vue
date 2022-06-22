@@ -3,7 +3,23 @@
     <base-container>
       <el-row :gutter="15">
         <el-col :span="5">
-          <div class="background-btns">
+          <div v-if="currentOption === 'second'" class="background-btns">
+            <div
+              @click="setOption('first')"
+              :class="{ 'is-active': currentOption === 'first' }"
+              class="btn"
+            >
+              <p>店舖</p>
+            </div>
+            <div
+              @click="setOption('second')"
+              :class="{ 'is-active': currentOption === 'second' }"
+              class="btn"
+            >
+              <p>店舖</p>
+            </div>
+          </div>
+          <div v-if="currentOption === 'first'" class="background-btns-red">
             <div
               @click="setOption('first')"
               :class="{ 'is-active': currentOption === 'first' }"
@@ -69,7 +85,16 @@
           </div>
         </el-col>
         <el-col :span="3">
-          <el-button @click="advancedSearchDialog = true" class="btn-header"
+          <el-button
+            v-if="currentOption === 'second'"
+            @click="advancedSearchDialog = true"
+            class="btn-header"
+            >進階搜尋</el-button
+          >
+          <el-button
+            v-if="currentOption === 'first'"
+            @click="advancedShopDialog = true"
+            class="btn-header-red"
             >進階搜尋</el-button
           >
         </el-col>
@@ -80,19 +105,26 @@
     :advanced-search-dialog="advancedSearchDialog"
     @closedDialog="advancedSearchDialog = $event"
   ></advanced-search-dialog>
+  <advanced-shop-dialog
+    :advanced-shop-dialog="advancedShopDialog"
+    @closedDialog="advancedShopDialog = $event"
+  ></advanced-shop-dialog>
 </template>
 
 <script>
 import AdvancedSearchDialog from "../search-product/AdvancedSearchDialog.vue";
+import AdvancedShopDialog from "../search-shop/AdvancedShopDialog.vue";
 
 export default {
   components: {
     AdvancedSearchDialog,
+    AdvancedShopDialog,
   },
   data() {
     return {
       currentOption: "first",
       advancedSearchDialog: false,
+      advancedShopDialog: false,
       input: "",
       options: [
         {
@@ -203,6 +235,14 @@ export default {
   methods: {
     setOption(option) {
       this.currentOption = option;
+      const header = document.querySelector(".the-header");
+
+      if (option === "first") {
+        header.style.backgroundImage = `url(${require("../../assets/header/header-red@2x.png")})`;
+      } else if (option === "second") {
+        header.style.backgroundImage = `url(${require("../../assets/home/header-yellow@2x.png")})`;
+      }
+      // "url('../../assets/home/header-yellow@2x.png')";
     },
   },
 };
@@ -216,8 +256,16 @@ export default {
   display: flex;
   align-items: center;
 }
+.bottom-header .background-btns-red {
+  background: #af3724;
+  border-radius: 100px;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+}
 
-.bottom-header .background-btns .btn {
+.bottom-header .background-btns .btn,
+.bottom-header .background-btns-red .btn {
   border-radius: 100px;
   padding: 0.3rem;
   width: 100%;
@@ -227,8 +275,12 @@ export default {
 .bottom-header .background-btns .btn.is-active {
   background: #ff9e45;
 }
+.bottom-header .background-btns-red .btn.is-active {
+  background: #e16956;
+}
 
-.bottom-header .background-btns .btn p {
+.bottom-header .background-btns .btn p,
+.bottom-header .background-btns-red .btn p {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 500;
@@ -239,7 +291,8 @@ export default {
   color: #ffbc63;
 }
 
-.bottom-header .background-btns .btn.is-active p {
+.bottom-header .background-btns .btn.is-active p,
+.bottom-header .background-btns-red .btn.is-active p {
   color: #fff;
 }
 
@@ -286,6 +339,22 @@ export default {
 .bottom-header .el-button.btn-header {
   background: #e18027;
   border-color: #e18027;
+  border-radius: 100px;
+  width: 100%;
+  font-family: "PingFang HK";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.bottom-header .el-button.btn-header-red {
+  background: #af3724;
+  border-color: #af3724;
   border-radius: 100px;
   width: 100%;
   font-family: "PingFang HK";

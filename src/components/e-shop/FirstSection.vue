@@ -3,6 +3,11 @@
     <el-row :gutter="20">
       <el-col v-for="item in 8" :key="item" :sm="12" :md="8" :lg="6">
         <div class="card">
+          <img
+            class="wish-off"
+            src="../../assets/beauty-channel/wish-off-desktop@2x.png"
+            alt=""
+          />
           <img src="../../assets/home/sample-shop@2x.png" alt="" />
           <div class="card-body">
             <p class="title">
@@ -64,6 +69,13 @@
   position: absolute;
   left: 0.1rem;
   top: 0.1rem;
+}
+.e-shop-first-section .card img.wish-off {
+  border: none;
+  width: 2rem;
+  position: absolute;
+  right: 0.1rem;
+  top: 0rem;
 }
 
 .e-shop-first-section .card .card-body {
