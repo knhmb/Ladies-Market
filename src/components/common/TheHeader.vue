@@ -67,8 +67,19 @@
         </div>
       </div>
     </base-container>
+    <bottom-header></bottom-header>
   </section>
 </template>
+
+<script>
+import BottomHeader from "./BottomHeader.vue";
+
+export default {
+  components: {
+    BottomHeader,
+  },
+};
+</script>
 
 <style scoped>
 .the-header {
