@@ -80,7 +80,7 @@ export default {
 }
 
 .recommends .container {
-  padding: 0 14rem;
+  padding: 0 13rem;
 }
 
 .recommends p.tab {

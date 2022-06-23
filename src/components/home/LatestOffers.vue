@@ -116,7 +116,7 @@ export default {
 }
 
 .latest-offers .container {
-  padding: 0 14rem;
+  padding: 0 13rem;
 }
 
 .latest-offers p.tab {

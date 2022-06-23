@@ -59,7 +59,7 @@ export default {
 }
 
 .leaderboard .container {
-  padding: 0 14rem;
+  padding: 0 13rem;
 }
 
 .leaderboard p.tab {

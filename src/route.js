@@ -20,6 +20,7 @@ import SearchProduct from "./pages/SearchProduct";
 import AdvancedSearchProductResult from "./pages/AdvancedSearchProductResult";
 import AdvancedSearchShopResult from "./pages/AdvancedSearchShopResult";
 import SearchShop from "./pages/SearchShop";
+import Shop from "./pages/Shop";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -92,6 +93,10 @@ const router = createRouter({
     {
       path: "/search-shop",
       component: SearchShop,
+    },
+    {
+      path: "/shop",
+      component: Shop,
     },
   ],
 });
