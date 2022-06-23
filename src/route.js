@@ -21,6 +21,7 @@ import AdvancedSearchProductResult from "./pages/AdvancedSearchProductResult";
 import AdvancedSearchShopResult from "./pages/AdvancedSearchShopResult";
 import SearchShop from "./pages/SearchShop";
 import Shop from "./pages/Shop";
+import ShoppingCart from "./pages/ShoppingCart";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -97,6 +98,10 @@ const router = createRouter({
     {
       path: "/shop",
       component: Shop,
+    },
+    {
+      path: "/shopping-cart",
+      component: ShoppingCart,
     },
   ],
 });
