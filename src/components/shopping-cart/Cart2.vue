@@ -9,7 +9,7 @@
       </div>
       <div class="content">
         <el-row>
-          <el-col :span="16">
+          <el-col :sm="24" :md="16">
             <el-checkbox @change="selectItem" v-model="checkbox1">
               <img src="../../assets/home/sample-product@2x.png" alt="" />
             </el-checkbox>
@@ -35,7 +35,7 @@
               </div>
             </div>
           </el-col>
-          <el-col :span="8">
+          <el-col :sm="24" :md="8">
             <p class="discount">$2,800.00</p>
             <p class="price">$2,230.00</p>
           </el-col>
@@ -43,7 +43,7 @@
       </div>
       <div class="content">
         <el-row>
-          <el-col :span="16">
+          <el-col :sm="24" :md="16">
             <el-checkbox v-model="checkbox2">
               <img src="../../assets/home/sample-product@2x.png" alt="" />
             </el-checkbox>
@@ -69,7 +69,7 @@
               </div>
             </div>
           </el-col>
-          <el-col :span="8">
+          <el-col :sm="24" :md="8">
             <p v-if="value1" class="discount">$2,800.00</p>
             <p class="price">3,000分</p>
           </el-col>
@@ -84,7 +84,7 @@
       </div>
       <div class="content">
         <el-row>
-          <el-col :span="16">
+          <el-col :sm="24" :md="16">
             <el-checkbox @change="selectItem" v-model="checkbox3">
               <img src="../../assets/home/sample-product@2x.png" alt="" />
             </el-checkbox>
@@ -110,7 +110,7 @@
               </div>
             </div>
           </el-col>
-          <el-col :span="8">
+          <el-col :sm="24" :md="8">
             <p class="discount">$2,800.00</p>
             <p class="price">$2,230.00</p>
           </el-col>
@@ -359,5 +359,11 @@ export default {
   .cart-2-card
   :deep(.el-checkbox .el-checkbox__input.is-checked + .el-checkbox__label) {
   color: #333;
+}
+
+@media screen and (max-width: 991px) {
+  .cart-2 .cart-2-card .el-col:nth-of-type(2) {
+    margin-top: 1rem;
+  }
 }
 </style>

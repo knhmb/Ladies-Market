@@ -73,4 +73,10 @@
   margin-top: 1rem;
   padding: 1.3rem;
 }
+
+@media screen and (max-width: 991px) {
+  .shopping-cart-right-section {
+    margin-top: 1rem;
+  }
+}
 </style>
