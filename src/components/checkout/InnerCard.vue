@@ -5,14 +5,14 @@
     </div>
     <div class="content">
       <el-row>
-        <el-col :span="16">
+        <el-col :sm="24" :md="16">
           <img src="../../assets/home/sample-product@2x.png" alt="" />
           <div class="text">
             <p>產品名稱產品名稱產品名稱產品名稱產品名稱</p>
             <p>數量: 1</p>
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :sm="24" :md="8">
           <p class="discount">$2,800.00</p>
           <p class="price">$2,800.00</p>
         </el-col>
@@ -20,14 +20,14 @@
     </div>
     <div class="content">
       <el-row>
-        <el-col :span="16">
+        <el-col :sm="24" :md="16">
           <img src="../../assets/home/sample-product@2x.png" alt="" />
           <div class="text">
             <p>產品名稱產品名稱產品名稱產品名稱產品名稱</p>
             <p>數量: 1</p>
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :sm="24" :md="8">
           <!-- <p class="discount">$2,800.00</p> -->
           <p class="points">3,000分</p>
         </el-col>
@@ -35,14 +35,14 @@
     </div>
     <div class="content">
       <el-row>
-        <el-col :span="16">
+        <el-col :sm="24" :md="16">
           <img src="../../assets/home/sample-product@2x.png" alt="" />
           <div class="text">
             <p>產品名稱產品名稱產品名稱產品名稱產品名稱</p>
             <p>數量: 1</p>
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :sm="24" :md="8">
           <p class="discount">$2,800.00</p>
           <p class="price">$2,800.00</p>
         </el-col>
@@ -56,14 +56,14 @@
     </div>
     <div class="content">
       <el-row>
-        <el-col :span="16">
+        <el-col :sm="24" :md="16">
           <img src="../../assets/home/sample-product@2x.png" alt="" />
           <div class="text">
             <p>產品名稱產品名稱產品名稱產品名稱產品名稱</p>
             <p>數量: 1</p>
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :sm="24" :md="8">
           <p class="discount">$2,800.00</p>
           <p class="price">$2,800.00</p>
         </el-col>

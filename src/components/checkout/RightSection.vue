@@ -46,6 +46,9 @@
           </div>
         </div>
       </div>
+      <div class="footer">
+        <el-button>確認並付款</el-button>
+      </div>
     </div>
   </div>
 </template>
@@ -74,9 +77,11 @@
 .checkout-right-section .card .body {
   padding: 1rem;
   padding-top: 0;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 1rem;
 }
 
-.checkout-right-section .card .body .items {
+.checkout-right-section .card .body .items:not(:last-of-type) {
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 1rem;
 }
@@ -121,5 +126,36 @@
 
 .checkout-right-section .card .body .items .item p.price.red {
   color: #e16956;
+}
+
+.checkout-right-section .card .footer {
+  padding: 1rem;
+}
+
+.checkout-right-section .card .footer .el-button {
+  background: linear-gradient(
+      269.05deg,
+      rgba(255, 142, 62, 0.6) 0%,
+      rgba(255, 142, 62, 0) 100%
+    ),
+    #e16956;
+  border-color: #e16956;
+  border-radius: 8px;
+  padding: 1.3rem;
+
+  font-family: "PingFang HK";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .checkout-right-section {
+    margin-top: 1rem;
+  }
 }
 </style>
