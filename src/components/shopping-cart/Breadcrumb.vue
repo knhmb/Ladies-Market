@@ -3,16 +3,20 @@
     <div class="breadcrumb-card">
       <div class="content is-active">
         <p>資料填寫</p>
+        <img src="../../assets/shop/chevron-right-primary@2x.png" alt="" />
+        <!-- <img v-else src="../../assets/shop/chevron-right-gray@2x.png" alt="" /> -->
+      </div>
+      <div
+        class="content"
+        :class="{ 'is-active': $route.path === '/checkout' }"
+      >
+        <p>資料填寫</p>
         <img
-          v-if="$route.path === '/shopping-cart'"
+          v-if="$route.path === '/checkout'"
           src="../../assets/shop/chevron-right-primary@2x.png"
           alt=""
         />
         <img v-else src="../../assets/shop/chevron-right-gray@2x.png" alt="" />
-      </div>
-      <div class="content">
-        <p>資料填寫</p>
-        <img src="../../assets/shop/chevron-right-gray@2x.png" alt="" />
       </div>
       <div class="content">
         <p>資料填寫</p>
@@ -22,9 +26,9 @@
 </template>
 
 <style scoped>
-.breadcrumb {
+/* .breadcrumb {
   margin-top: 1rem;
-}
+} */
 
 .breadcrumb .breadcrumb-card {
   background: #ffffff;

@@ -1,11 +1,11 @@
 <template>
-  <section class="shopping-cart">
+  <section class="checkout">
     <base-container>
-      <h5>購物車</h5>
       <el-row :gutter="20">
         <el-col :span="17">
           <Breadcrumb />
-          <Cart />
+          <top-section></top-section>
+          <Form />
         </el-col>
         <el-col :span="7">
           <right-section></right-section>
@@ -17,32 +17,23 @@
 
 <script>
 import Breadcrumb from "../components/shopping-cart/Breadcrumb.vue";
-import Cart from "../components/shopping-cart/Cart.vue";
-import RightSection from "../components/shopping-cart/RightSection.vue";
+import TopSection from "../components/checkout/TopSection.vue";
+import Form from "../components/checkout/Form.vue";
+import RightSection from "../components/checkout/RightSection.vue";
 
 export default {
   components: {
     Breadcrumb,
-    Cart,
+    TopSection,
+    Form,
     RightSection,
   },
 };
 </script>
 
 <style scoped>
-.shopping-cart {
+.checkout {
   padding: 2rem 0;
   background: #f5f5f5;
-}
-
-.shopping-cart h5 {
-  font-family: "PingFang HK";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: #333333;
-  margin-bottom: 1rem;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="cart">
-    <div class="cart-card">
+  <div class="cart-2">
+    <div class="cart-2-card">
       <div class="header">
         <el-checkbox @change="checkAllItems" v-model="checkAll"
           >店舖名稱店舖名稱</el-checkbox
@@ -118,22 +118,16 @@
       </div>
     </div>
   </div>
-  <cart-2></cart-2>
 </template>
 
 <script>
-import Cart2 from "./Cart2.vue";
-
 export default {
-  components: {
-    Cart2,
-  },
   data() {
     return {
       num: 1,
-      checkAll: true,
-      checkbox1: true,
-      checkbox2: true,
+      checkAll: false,
+      checkbox1: false,
+      checkbox2: false,
       checkbox3: true,
       value1: false,
     };
@@ -168,59 +162,58 @@ export default {
       console.log(this.value1);
     },
   },
-  created() {},
 };
 </script>
 
 <style scoped>
-.cart {
+.cart-2 {
   margin-top: 1rem;
 }
 
-.cart .cart-card {
+.cart-2 .cart-2-card {
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
 }
 
-.cart .cart-card .header {
+.cart-2 .cart-2-card .header {
   border-bottom: 1px solid #e6e6e6;
   padding: 1rem;
 }
 
-.cart .cart-card .header img {
+.cart-2 .cart-2-card .header img {
   width: 1.6rem;
   vertical-align: middle;
   margin-left: 0.5rem;
 }
 
-.cart .cart-card .el-col:first-of-type {
+.cart-2 .cart-2-card .el-col:first-of-type {
   display: flex;
 }
 
-.cart .cart-card .el-col:nth-of-type(2) {
+.cart-2 .cart-2-card .el-col:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
 }
 
-.cart .cart-card .content {
+.cart-2 .cart-2-card .content {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.cart .cart-card .content .checkbox-content {
+.cart-2 .cart-2-card .content .checkbox-content {
   display: flex;
 }
 
-.cart .cart-card .content img {
+.cart-2 .cart-2-card .content img {
   width: 6rem;
   border-radius: 2px;
   margin-right: 0.5rem;
 }
 
-.cart .cart-card .content .text p {
+.cart-2 .cart-2-card .content .text p {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -229,13 +222,13 @@ export default {
   color: #333333;
 }
 
-.cart .cart-card .content .text .input-number {
+.cart-2 .cart-2-card .content .text .input-number {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
 }
 
-.cart .cart-card .content .text .input-number span {
+.cart-2 .cart-2-card .content .text .input-number span {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 600;
@@ -246,7 +239,7 @@ export default {
   margin: 0 1rem;
 }
 
-.cart .cart-card .content .text .input-number .box {
+.cart-2 .cart-2-card .content .text .input-number .box {
   background: #f5f5f5;
   border-radius: 4px;
   /* padding: 0.5rem; */
@@ -256,12 +249,12 @@ export default {
   cursor: pointer;
 }
 
-.cart .cart-card .content .text .input-number .box img {
+.cart-2 .cart-2-card .content .text .input-number .box img {
   width: 1.5rem;
   margin: 0;
 }
 
-.cart .cart-card .content p.dscount {
+.cart-2 .cart-2-card .content p.dscount {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -273,7 +266,7 @@ export default {
   margin-bottom: 0.5rem;
 }
 
-.cart .cart-card .content p.price {
+.cart-2 .cart-2-card .content p.price {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 600;
@@ -283,11 +276,11 @@ export default {
   color: #e16956;
 }
 
-.cart .cart-card .content:nth-of-type(3) p.price {
+.cart-2 .cart-2-card .content:nth-of-type(3) p.price {
   color: #ff9e45;
 }
 
-.cart .cart-card .content .switch {
+.cart-2 .cart-2-card .content .switch {
   background: #f5f5f5;
   border-radius: 80px;
   width: 20rem;
@@ -299,16 +292,16 @@ export default {
   margin-left: auto;
 }
 
-.cart .cart-card .content .switch img {
+.cart-2 .cart-2-card .content .switch img {
   width: 1.5rem;
 }
 
-.cart .cart-card .content .switch .switch-input {
+.cart-2 .cart-2-card .content .switch .switch-input {
   display: flex;
   align-items: center;
 }
 
-.cart .cart-card .content .switch .switch-input p {
+.cart-2 .cart-2-card .content .switch .switch-input p {
   font-family: "PingFang HK";
   font-style: normal;
   font-weight: 400;
@@ -321,8 +314,8 @@ export default {
   color: #333333;
 }
 
-.cart
-  .cart-card
+.cart-2
+  .cart-2-card
   .content
   .switch
   .switch-input
@@ -331,19 +324,19 @@ export default {
   border-color: #e16956;
 }
 
-.cart .cart-card :deep(.el-checkbox) {
+.cart-2 .cart-2-card :deep(.el-checkbox) {
   vertical-align: middle;
   height: 100%;
 }
 
-.cart .cart-card :deep(.el-checkbox .el-checkbox__inner) {
+.cart-2 .cart-2-card :deep(.el-checkbox .el-checkbox__inner) {
   border-radius: 100%;
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
 }
 
-.cart .cart-card :deep(.el-checkbox .el-checkbox__inner::after) {
+.cart-2 .cart-2-card :deep(.el-checkbox .el-checkbox__inner::after) {
   transform: none;
   border: none;
   top: 50%;
@@ -355,15 +348,15 @@ export default {
   border-radius: 100%;
 }
 
-.cart
-  .cart-card
+.cart-2
+  .cart-2-card
   :deep(.el-checkbox .el-checkbox__input.is-checked .el-checkbox__inner) {
   background: #e16956;
   border-color: #e16956;
 }
 
-.cart
-  .cart-card
+.cart-2
+  .cart-2-card
   :deep(.el-checkbox .el-checkbox__input.is-checked + .el-checkbox__label) {
   color: #333;
 }

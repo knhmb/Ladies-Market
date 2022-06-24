@@ -22,6 +22,7 @@ import AdvancedSearchShopResult from "./pages/AdvancedSearchShopResult";
 import SearchShop from "./pages/SearchShop";
 import Shop from "./pages/Shop";
 import ShoppingCart from "./pages/ShoppingCart";
+import Checkout from "./pages/Checkout";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -102,6 +103,10 @@ const router = createRouter({
     {
       path: "/shopping-cart",
       component: ShoppingCart,
+    },
+    {
+      path: "/checkout",
+      component: Checkout,
     },
   ],
 });
