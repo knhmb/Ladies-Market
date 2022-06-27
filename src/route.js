@@ -23,6 +23,9 @@ import SearchShop from "./pages/SearchShop";
 import Shop from "./pages/Shop";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
+import Profile from "./pages/Profile";
+import EditMember from "./pages/EditMember";
+import ChangePassword from "./pages/ChangePassword";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -107,6 +110,14 @@ const router = createRouter({
     {
       path: "/checkout",
       component: Checkout,
+    },
+    {
+      path: "/profile",
+      component: Profile,
+      children: [
+        { path: "edit-member", component: EditMember },
+        { path: "edit-password", component: ChangePassword },
+      ],
     },
   ],
 });
