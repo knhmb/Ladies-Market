@@ -5,8 +5,8 @@
       :model-value="dialogVisible"
       title="訂單詳細"
     >
-      <el-row>
-        <el-col :span="12">
+      <el-row :gutter="80">
+        <el-col :sm="24" :md="12">
           <div class="profile-info">
             <h6>訂單詳細</h6>
             <div class="content">
@@ -71,14 +71,25 @@
             </div>
           </div>
         </el-col>
+        <el-col :sm="24" :md="12">
+          <Form />
+          <price-details></price-details>
+        </el-col>
       </el-row>
     </el-dialog>
   </div>
 </template>
 
 <script>
+import Form from "./Form";
+import PriceDetails from "./PriceDetails.vue";
+
 export default {
   props: ["dialogVisible"],
+  components: {
+    Form,
+    PriceDetails,
+  },
 };
 </script>
 
@@ -235,5 +246,17 @@ export default {
   line-height: 135%;
   letter-spacing: -0.02em;
   color: #e16956;
+}
+
+@media screen and (max-width: 820px) {
+  .order-record-dialog :deep(.el-dialog) {
+    width: 42rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .order-record-dialog :deep(.el-dialog) {
+    width: 22rem;
+  }
 }
 </style>
