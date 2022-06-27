@@ -28,6 +28,7 @@ import EditMember from "./pages/EditMember";
 import ChangePassword from "./pages/ChangePassword";
 import Comment from "./pages/BeautyLogComment";
 import Photo from "./pages/BeautyLogPhoto";
+import BeautyLogOrderRecord from "./pages/BeautyLogOrderRecord";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -121,6 +122,7 @@ const router = createRouter({
         { path: "edit-password", component: ChangePassword },
         { path: "beauty-log-comment", component: Comment },
         { path: "beauty-log-photo", component: Photo },
+        { path: "beauty-log-order-record", component: BeautyLogOrderRecord },
       ],
     },
   ],
