@@ -1,5 +1,5 @@
 <template>
-  <div class="card-content">
+  <div @click="dialogVisible = true" class="card-content">
     <div class="information">
       <div class="content">
         <div class="single-info">
@@ -101,7 +101,26 @@
       <img src="../../assets/home/sample-product@2x.png" alt="" />
     </div>
   </div>
+  <Dialog
+    @dialogClosed="dialogVisible = $event"
+    :dialog-visible="dialogVisible"
+  />
 </template>
+
+<script>
+import Dialog from "./Dialog.vue";
+
+export default {
+  components: {
+    Dialog,
+  },
+  data() {
+    return {
+      dialogVisible: true,
+    };
+  },
+};
+</script>
 
 <style scoped>
 .card-content {
@@ -111,6 +130,7 @@
   padding: 1rem;
   margin-top: 1.5rem;
   box-shadow: none;
+  cursor: pointer;
 }
 
 .card-content .information {
