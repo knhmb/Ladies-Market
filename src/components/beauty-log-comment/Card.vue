@@ -229,4 +229,22 @@
 .beauty-log-comment-card .body .images img:not(:last-of-type) {
   margin-right: 0.5rem;
 }
+
+@media screen and (max-width: 991px) {
+  .beauty-log-comment-card .header {
+    padding: 0.5rem 0.5rem;
+  }
+  .beauty-log-comment-card .body {
+    padding: 0.5rem;
+  }
+
+  .beauty-log-comment-card .body .numbers .single-number:not(:last-of-type) {
+    margin-right: 0.6rem;
+  }
+
+  .beauty-log-comment-card .body .numbers .single-number img {
+    width: 1.5rem;
+    margin-left: 0.2rem;
+  }
+}
 </style>

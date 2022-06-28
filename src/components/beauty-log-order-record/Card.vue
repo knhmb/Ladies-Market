@@ -116,7 +116,7 @@ export default {
   },
   data() {
     return {
-      dialogVisible: true,
+      dialogVisible: false,
     };
   },
 };

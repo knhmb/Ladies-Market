@@ -174,4 +174,10 @@ export default {
   color: #0d6d81;
   /* margin-top: 0.5rem; */
 }
+
+@media screen and (max-width: 991px) {
+  .profile-left-section {
+    margin-bottom: 1rem;
+  }
+}
 </style>
