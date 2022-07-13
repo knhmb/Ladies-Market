@@ -141,7 +141,7 @@ export default {
 }
 
 .register-form-content h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -157,7 +157,7 @@ export default {
 
 .register-form-content .el-form :deep(.el-form-item__label) {
   margin-bottom: 0.3rem;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -196,7 +196,7 @@ export default {
   margin-bottom: 0.7rem;
 }
 .register-form-content .el-form .two-inputs .el-input p.input-suffix {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -214,7 +214,7 @@ export default {
 }
 
 .register-form-content .el-form .el-radio :deep(.el-radio__label) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -236,7 +236,7 @@ export default {
 }
 
 .register-form-content .el-form .box p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -264,7 +264,7 @@ export default {
 }
 
 .register-form-content .el-form .el-checkbox :deep(.el-checkbox__label) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -289,7 +289,7 @@ export default {
     #e16956;
   border-radius: 8px;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

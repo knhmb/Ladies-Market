@@ -58,7 +58,7 @@ export default {
 }
 
 .registeration-form .registeration-form-card h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;

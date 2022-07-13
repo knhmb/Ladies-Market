@@ -220,7 +220,7 @@ export default {
 
 <style scoped>
 h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -259,7 +259,7 @@ h5 span {
 }
 
 .tab .content p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -283,7 +283,7 @@ h5 span {
 }
 
 .filter p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -321,7 +321,7 @@ h5 span {
 }
 
 .filter-dialog :deep(.el-dialog h6) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -366,7 +366,7 @@ h5 span {
 .filter-dialog :deep(.el-dialog .top-section .title p),
 .filter-dialog :deep(.el-dialog .bottom-section .title p),
 .filter-dialog :deep(.el-dialog .second-section .title p) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -382,7 +382,7 @@ h5 span {
   border-radius: 8px;
   text-align: center;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -410,7 +410,7 @@ h5 span {
 }
 
 .filter-dialog :deep(.el-dialog .bottom-section p.label) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -436,7 +436,7 @@ h5 span {
 }
 
 .filter-dialog :deep(.el-dialog p.footer) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -461,7 +461,7 @@ h5 span {
   width: 100%;
   border-color: #e16956;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

@@ -74,7 +74,7 @@ export default {
 }
 
 .first-section .first-section-main .card .card-body p.title {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -84,7 +84,7 @@ export default {
   margin-bottom: 0.5rem;
 }
 .first-section .first-section-main .card .card-body p.description {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -94,7 +94,7 @@ export default {
 }
 
 .first-section .first-section-main .card .card-body p.date {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

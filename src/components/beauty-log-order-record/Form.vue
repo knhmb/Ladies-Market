@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .order-record-form h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -43,7 +43,7 @@ export default {
 }
 
 .order-record-form .el-form :deep(.el-form-item .el-form-item__label) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

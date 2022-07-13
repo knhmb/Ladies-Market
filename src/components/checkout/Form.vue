@@ -31,7 +31,7 @@
 }
 
 .checkout-form h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -43,7 +43,7 @@
 
 .checkout-form .el-form :deep(.el-form-item .el-form-item__label),
 .checkout-form .el-form p.info {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

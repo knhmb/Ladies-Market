@@ -87,7 +87,7 @@ export default {
 
 <style scoped>
 h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -126,7 +126,7 @@ h5 span {
 }
 
 .tab .content p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -150,7 +150,7 @@ h5 span {
 }
 
 .filter p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;

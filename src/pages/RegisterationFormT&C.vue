@@ -92,7 +92,7 @@ export default {};
 }
 
 .registeration-form-tc .registeration-form-tc-card h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -108,7 +108,7 @@ export default {};
 }
 
 .registeration-form-tc .registeration-form-tc-card p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
 }
 
@@ -122,7 +122,7 @@ export default {};
 }
 
 .registeration-form-tc .registeration-form-tc-card p.description {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

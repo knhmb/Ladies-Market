@@ -60,7 +60,7 @@ export default {
 }
 
 .forgot-password .forgot-password-card .header h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -75,7 +75,7 @@ export default {
 }
 
 .forgot-password .forgot-password-card .content p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

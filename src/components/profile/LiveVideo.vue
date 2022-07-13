@@ -71,7 +71,7 @@ export default {
 
 .profile-live-video-carousel p.tab {
   background: #faeadd;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -128,7 +128,7 @@ export default {
 }
 
 .profile-live-video-carousel .beauty-channel-main .card .card-body p.title {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -142,7 +142,7 @@ export default {
   .card
   .card-body
   p.description {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -152,7 +152,7 @@ export default {
 }
 
 .profile-live-video-carousel .beauty-channel-main .card .card-body p.date {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

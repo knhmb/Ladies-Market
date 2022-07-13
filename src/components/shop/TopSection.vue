@@ -122,7 +122,7 @@ export default {
 }
 
 .shop-top-section .content p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -148,7 +148,7 @@ export default {
 }
 
 .shop-top-section .reviews .review p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -183,7 +183,7 @@ export default {
 }
 
 .shop-top-section :deep(.el-dialog h5) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -199,7 +199,7 @@ export default {
 
 .shop-top-section :deep(.el-dialog .el-button) {
   width: 100%;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

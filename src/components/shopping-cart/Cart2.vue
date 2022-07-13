@@ -214,7 +214,7 @@ export default {
 }
 
 .cart-2 .cart-2-card .content .text p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -229,7 +229,7 @@ export default {
 }
 
 .cart-2 .cart-2-card .content .text .input-number span {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -255,7 +255,7 @@ export default {
 }
 
 .cart-2 .cart-2-card .content p.dscount {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -267,7 +267,7 @@ export default {
 }
 
 .cart-2 .cart-2-card .content p.price {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -302,7 +302,7 @@ export default {
 }
 
 .cart-2 .cart-2-card .content .switch .switch-input p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

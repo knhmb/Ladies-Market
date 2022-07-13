@@ -110,7 +110,7 @@ export default {
 <style scoped>
 .beauty-channel-right-section p.tab {
   background: #fef2e2;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -153,7 +153,7 @@ export default {
 }
 
 .beauty-channel-right-section .chat .chat-card .chat-content p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;

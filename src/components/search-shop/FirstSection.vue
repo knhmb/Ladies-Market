@@ -81,7 +81,7 @@
 }
 
 .search-shop-first-section .card .card-body p.title {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -91,7 +91,7 @@
   margin-bottom: 0.5rem;
 }
 .search-shop-first-section .card .card-body p.description {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -128,7 +128,7 @@
 }
 
 .search-shop-first-section .card .reviews p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

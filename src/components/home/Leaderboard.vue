@@ -64,7 +64,7 @@ export default {
 
 .leaderboard p.tab {
   background: #f7f6f2;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -116,7 +116,7 @@ export default {
 }
 
 .leaderboard .leaderboard-main .card .content p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

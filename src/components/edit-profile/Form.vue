@@ -109,7 +109,7 @@ export default {
 }
 
 .edit-profile-form .el-form p.label {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -177,7 +177,7 @@ export default {
   border-radius: 8px;
   border-color: #cccccc;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

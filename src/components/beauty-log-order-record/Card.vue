@@ -158,7 +158,7 @@ export default {
 }
 
 .card-content .information .single-info p.question {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -168,7 +168,7 @@ export default {
 }
 
 .card-content .information .single-info p.answer {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

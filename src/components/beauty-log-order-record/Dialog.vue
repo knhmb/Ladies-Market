@@ -101,7 +101,7 @@ export default {
 
 .order-record-dialog :deep(.el-dialog .el-dialog__header) {
   text-align: center;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -115,7 +115,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .profile-info h6) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -140,7 +140,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .content .single-info p.question) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -150,7 +150,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .content .single-info p.answer) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -179,7 +179,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .orders h6) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -194,7 +194,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .orders .card .top p) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -217,7 +217,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .orders .bottom p) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -228,7 +228,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .orders .bottom .prices p.discount) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -239,7 +239,7 @@ export default {
 }
 
 .order-record-dialog :deep(.el-dialog .orders .bottom .prices p.price) {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;

@@ -64,7 +64,7 @@ export default {
 }
 
 .profile-left-section .card .header p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -81,7 +81,7 @@ export default {
   top: 0.5rem;
   padding: 0.2rem 0.5rem;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -111,7 +111,7 @@ export default {
 }
 
 .profile-left-section .card .body .member-card .points p.name {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -136,7 +136,7 @@ export default {
   .points
   .available-points
   p.current-points {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -166,7 +166,7 @@ export default {
   .points
   .available-points
   p.expiry-date {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;

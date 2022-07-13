@@ -281,7 +281,7 @@ export default {
 
 .bottom-header .background-btns .btn p,
 .bottom-header .background-btns-red .btn p {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -341,7 +341,7 @@ export default {
   border-color: #e18027;
   border-radius: 100px;
   width: 100%;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -357,7 +357,7 @@ export default {
   border-color: #af3724;
   border-radius: 100px;
   width: 100%;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -387,7 +387,7 @@ export default {
 .el-popper.is-pure.is-light.el-select__popper.search-select
   .popular-searches
   h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -401,7 +401,7 @@ export default {
 .el-popper.is-pure.is-light.el-select__popper.search-select
   .popular-searches
   p.warning {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -424,7 +424,7 @@ export default {
   width: 100%;
   text-align: center;
   margin-bottom: 1rem !important;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

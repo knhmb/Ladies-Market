@@ -70,7 +70,7 @@ export default {
 }
 
 .register .register-card h5 {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -110,7 +110,7 @@ export default {
 
 .register .register-card :deep(.el-checkbox .el-checkbox__label),
 .register .register-card p.forgot-password {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -154,7 +154,7 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -178,7 +178,7 @@ export default {
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
   border-radius: 8px;
 
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -194,7 +194,7 @@ export default {
 }
 
 .register .register-card p.have-an-account {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

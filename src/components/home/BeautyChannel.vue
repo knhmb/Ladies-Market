@@ -87,7 +87,7 @@ export default {
 
 .beauty-channel p.tab {
   background: #fef2e2;
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -141,7 +141,7 @@ export default {
 }
 
 .beauty-channel .beauty-channel-main .card .card-body p.title {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -151,7 +151,7 @@ export default {
   margin-bottom: 0.5rem;
 }
 .beauty-channel .beauty-channel-main .card .card-body p.description {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -161,7 +161,7 @@ export default {
 }
 
 .beauty-channel .beauty-channel-main .card .card-body p.date {
-  font-family: "PingFang HK";
+  font-family: Noto Sans TC, PingFang, Helvetica, Arial, sans-serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
